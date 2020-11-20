@@ -4,8 +4,6 @@
     npm i
 ### start with
     ng serve --open
-### build with
-    npm build
 
 ### login credentials:
     mail: testmail1@test.com
