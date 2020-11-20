@@ -1,0 +1,13 @@
+<header class="header">
+    <a routerLink="/home" class="header__logo">
+        <img [src]="logoPath" alt="logo">
+    </a>
+    <h1 class="header__directory"  *ngIf="directory">{{directory}}</h1>
+    <div class="header__user-info" *ngIf="user">
+        <p>{{user.name}}</p>
+        <p>{{user.system}}</p>
+    </div>
+    <rms-custom-select (onSelectChange)="onSelectChange($event)" 
+                       [selectOptions]="userParams"
+                       *ngIf="user"></rms-custom-select>
+</header>
